@@ -8,8 +8,8 @@ async function createTodo(data: FormData) {
   if (typeof title !== "string" || title.length === 0) {
     throw new Error("Invlaid Title");
   }
-  console.log(prisma.Prisma.ModelName.Todo);
-  //   await prisma.todo.create({ data: { title, complete: false } });
+  console.log(prisma);
+  // await prisma.todo.create({ data: { title, complete: false } });
   redirect("/");
 }
 
